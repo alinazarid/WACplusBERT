@@ -10,14 +10,15 @@ The emerge of Transformers in the field of Natural Language Processing had a swe
  
 #### Instruction
 1. Clone the repository
-2. Open WAC_BERT_Pipeline.ipynb. You may open it with Google Colab
-3. Uncomment the first cell if you are running the pipeline on Google Colab
-4. The second 2 cell is to set up the Python environment for the pipeline
+2. Download the `clip_WAC_513.pkl` from the link in `inputs/clip_WAC_513.md` and store it in the inputs folder
+3. Open WAC_BERT_Pipeline.ipynb. You may open it with Google Colab
+4. Uncomment the first cell if you are running the pipeline on Google Colab
+5. The second 2 cell is to set up the Python environment for the pipeline
   * This Pipeline is set up on Windows 10. You may need different commands to install PyTorch
-5. Set the pipeline parameters in the "Parameters" section.
+6. Set the pipeline parameters in the "Parameters" section.
   * Pick BERT-like model at [https://huggingface.co/models](https://huggingface.co/models)
   * Refer to the [project's report](https://scholarworks.boisestate.edu/) to know more about different configurations.
-6. Provide input data. An example is in the notebook.
+7. Provide input data. An example is in the notebook.
  
 	**A.** Write a parser function for your data. There are built-in parsers in *parser.py* module of wac_bert_tools library. The parser function must return a dataframe with two columns ['word','measure']
  
